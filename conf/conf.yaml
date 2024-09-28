@@ -1,0 +1,33 @@
+Login:
+  host: 127.0.0.1
+  port: 8003
+mysql:
+  host : 127.0.0.1
+  port : 3306
+  user : root
+  password : root123456
+  db : SLGsg
+  config: "charset=utf8mb4&parseTime=True&loc=Local"
+  log_level: dev
+webserver:
+  host: 127.0.0.1
+  port: 8088
+gate_server:
+  host: 127.0.0.1
+  port: 8004
+  login_proxy: ws://127.0.0.1:8003
+  game_proxy: ws://127.0.0.1:8001
+  chat_proxy: ws://127.0.0.1:8002
+  need_secret: true
+game_server:
+  host: 127.0.0.1
+  port: 8001
+chat_server:
+  host: 127.0.0.1
+  port: 8002
+log_server:
+  file_die: "/Users/xiaoff/Documents/lw/Three_kingdoms_SLG/log/"
+  maxsize : 128
+  max_backups : 30
+  max_age : 7
+  compress : true
